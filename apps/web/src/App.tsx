@@ -38,9 +38,7 @@ function App() {
       <section className="health">
         <h2>/health</h2>
         {health.status === 'loading' && <p>読み込み中…</p>}
-        {health.status === 'ok' && (
-          <pre>{JSON.stringify(health.data, null, 2)}</pre>
-        )}
+        {health.status === 'ok' && <pre>{JSON.stringify(health.data, null, 2)}</pre>}
         {health.status === 'error' && (
           <p className="error">
             接続できません（API を起動し、CORS と URL を確認してください）。

@@ -1,0 +1,22 @@
+{
+  "recommendations": [
+    // --- 共通 ---
+    "editorconfig.editorconfig",
+    "esbenp.prettier-vscode",
+
+    // --- フロント (TypeScript / React) ---
+    "dbaeumer.vscode-eslint",
+
+    // --- バックエンド (Python / FastAPI) ---
+    "ms-python.python",
+    "ms-python.vscode-pylance",
+    "charliermarsh.ruff",
+
+    // --- Docker / Compose ---
+    "ms-azuretools.vscode-docker",
+
+    // --- その他便利 ---
+    "eamodio.gitlens",
+    "github.vscode-github-actions"
+  ]
+}

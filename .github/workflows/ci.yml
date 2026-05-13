@@ -20,6 +20,7 @@ jobs:
           cache: npm
           cache-dependency-path: apps/web/package-lock.json
       - run: npm ci
+      - run: npm run format:check
       - run: npm run lint
       - run: npm run build
 
@@ -34,9 +35,10 @@ jobs:
         with:
           version: "0.9.x"
           enable-cache: true
-      - name: Sync and lint
+      - name: Sync, format check, and lint
         run: |
           uv sync --frozen --all-groups
+          uv run ruff format --check src
           uv run ruff check src
 
   compose:
