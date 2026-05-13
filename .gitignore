@@ -1,0 +1,17 @@
+.env
+.DS_Store
+
+# Python / uv
+**/.venv/
+**/__pycache__/
+*.py[cod]
+.ruff_cache/
+.pytest_cache/
+
+# Node
+**/node_modules/
+**/dist/
+
+# Editor
+.idea/
+.vscode/

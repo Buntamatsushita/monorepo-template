@@ -1,0 +1,22 @@
+.app {
+  max-width: 42rem;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+  font-family: system-ui, sans-serif;
+}
+
+.health pre {
+  background: #0f172a;
+  color: #e2e8f0;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  overflow: auto;
+}
+
+.error {
+  color: #b91c1c;
+}
+
+code {
+  font-size: 0.9em;
+}
