@@ -56,5 +56,22 @@
   // ---- Docker ----
   "[dockerfile]": {
     "editor.defaultFormatter": "ms-azuretools.vscode-docker"
+  },
+
+  // ---- ポート転送（タブレット・別デバイスからの確認用） ----
+  "remote.autoForwardPorts": true,
+  "remote.portsAttributes": {
+    "80": {
+      "label": "app (nginx)",
+      "protocol": "http"
+    },
+    "5173": {
+      "label": "web (vite)",
+      "protocol": "http"
+    },
+    "8000": {
+      "label": "api",
+      "protocol": "http"
+    }
   }
 }

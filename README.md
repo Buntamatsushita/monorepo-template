@@ -15,7 +15,7 @@ React（Vite + TypeScript）と FastAPI（uv）、PostgreSQL を **Docker Compos
 3. `docker compose up --build` を実行する。  
 4. ブラウザで [http://localhost](http://localhost)（画面）と [http://localhost/api/docs](http://localhost/api/docs)（API ドキュメント）を開く。
 
-各コマンドの意味や、うまくいかないときの見方は上記の日本語ガイドに任せます。
+各コマンドの意味や、うまくいかないときの見方は上記の日本語ガイドに任せます。タブレットなど別デバイスから触る手順（LAN・VS Code のポート転送）は [getting-started-ja.md の該当節](docs/getting-started-ja.md#タブレットや別デバイスから触る) を参照してください。
 
 ## リポジトリ構成
 

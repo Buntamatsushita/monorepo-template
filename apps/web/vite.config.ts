@@ -9,6 +9,8 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
     port: 5173,
+    // nginx 経由で LAN IP やタブレットから開くときの Host チェックを緩める
+    allowedHosts: true,
     watch: usePolling ? { usePolling: true, interval: 300 } : undefined,
   },
 })
