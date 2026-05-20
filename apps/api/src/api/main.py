@@ -1,3 +1,4 @@
+import os
 from contextlib import asynccontextmanager
 
 from fastapi import Depends, FastAPI
@@ -19,7 +20,7 @@ async def lifespan(app: FastAPI):
 
 
 settings = Settings()
-app = FastAPI(title="api", lifespan=lifespan)
+app = FastAPI(title="api", lifespan=lifespan, root_path=os.getenv("ROOT_PATH", ""))
 
 app.add_middleware(
     CORSMiddleware,
